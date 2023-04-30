@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3828bb7460.js" crossorigin="anonymous"></script>
     <title>Document</title> 
     <style>
     .img img{
@@ -37,7 +38,7 @@
         background-color: rgb(241, 91, 91);
         
     }
-    /about{
+    about{
         padding: 80px 0;
     }
     .box{
@@ -53,6 +54,36 @@
         text-size-adjust: 10px;
         text-align: center;
     }
+    /*
+    #flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: auto;
+            height:auto;
+            flex-flow: row;
+            
+        }
+        #flex div{
+            width: 250px;
+            height: 250px;
+            background-color:rgb(35, 211, 123);
+            margin: auto;
+            text-align: center;
+            
+        }*/
+        #grid{
+        display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+         grid-template-rows: 330px;
+         grid-gap: 56px;
+         font-size: 26px;
+         text-align: center;
+         padding: 80px;
+     }
+     
+        
+        
     </style>
 </head>
 <body>
@@ -70,6 +101,33 @@
     <li><a href="module.html">Module</a></li>
     <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div id="grid" >
+        <div class="box1" style="border: 100x solid black;padding:90px;background-color: burlywood;color: black;text-align: center; ">
+            <i class="fa-solid fa-laptop-code fa-bounce fa-4x" ></i>
+            <h1><a href="Web.html">Web.html</a></h1></div>
+        <div class="box2" style="padding-top:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-compass-drafting fa-spin fa-4x"></i>
+            <h1><a href="cad.html">cad.html</a></h1></div>
+        <div class="box3" style="padding:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-object-ungroup fa-beat fa-4x"></i>
+            <h1><a href="CAC">CAC</a></h1></div>
+        <div class="box4" style="padding:90px;background-color: burlywood;color: black;">
+            <i class="fa-sharp fa-solid fa-cube fa-bounce fa-4x"></i>
+            <h1><a href="3D printing">3D Printing</a></h1></div>
+        <div class="box5" style="padding:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-microchip fa-spin fa-4x"></i>
+            <h1><a href="PCB Making">PCB Making</a></h1></div>
+        <div class="box6" style="padding:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-wifi fa-fade fa-4x"></i> 
+            <h1><a href="IOT">IOT</a></h1></div>
+        <div class="box7" style="padding:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-mobile-screen fa-shake fa-4x"></i>
+            <h1><a href="App Interface ">App Interface </a></h1></div>
+        <div class="box8" style="padding-top:90px;background-color: burlywood;color: black;">
+            <i class="fa-solid fa-robot fa-bounce fa-4x"></i>
+            <h1><a href="AI,ML">AI,ML</a></h1></div>
+    </div>
         
     
 </body>

@@ -3,12 +3,13 @@
     width: auto;
     height: auto;
     flex-direction: column;
+    
 }
 #flex div{
     flex-direction: column;
     width: auto;
     height: auto;
-
+    background-image: url(weback.jpg);
     margin: 25px;
     
     align-items: center;
@@ -43,7 +44,7 @@ text-align: center;
     background-color: rgb(241, 91, 91);
     
 }
-/about{
+about{
     padding: 80px 0;
 }
 .box{
