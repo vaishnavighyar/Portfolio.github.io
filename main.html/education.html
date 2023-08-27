@@ -43,7 +43,7 @@
     .box{
         background-color: whitesmoke;
         width:650px;
-        height: 850p;
+        height: 1150px;
         text-align: center;
         margin-left: 550px;
         border-radius: 10px;
@@ -53,16 +53,53 @@
         text-size-adjust: 10px;
         text-align: center;
     }
-    h1{
-            font-size: 70px;
-            font-weight: 900;
-            text-align: center;
-        }
-    p{
-          font-size: 40px;
-          text-align: center;
-        }
-    </style>
+    
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 2000px;
+    max-height: 7000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    flex: 1;
+    max-width: calc(60% - 20px);
+    max-height: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 50px;
+    color: #666;
+  }
+  h2{
+    font-size: 50px;
+  }
+</style>
+
+
+    
 </head>
 <body>
     <nav>
@@ -79,17 +116,32 @@
           <li><a href="module.html">Module</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-<div class="edu">
-    <h1>Education</h1>
-    <i class="fa-sharp fa-solid fa-book-open-reader fa-bounce fa-2x" style="color: black;"></i>
-    <p>Completed primary education from:- St. Ann's English Medium High School , Khamgaon.</p>
-    <p>Completed secondary education from:- Shri Shivaji Science College,Nagpur</p>
-    
-    <p> I am Currentyl pursuing degree of Bachelor's of Engineering in Computer Science and Engineering [CSE]
-         from "Shri Sant Gajanan Maharaj College of Engineering Shegaon".</p>
-    <p> Front-end Developer-Basic</p>
-    <p>Java script-Basic</p>     
-    </div>
+        <div class="card-container">
+            <div class="card">
+              <div class="card-content">
+                <h2 class="Education">Education</h2>
+                <p class="card-description">
+                    2nd Year Student:-
+                
+                    Persuing B.E in Computer Science and Engineering from Shri Shant Gajanan Maharaj College Of Engineering ,Shegaon(SSGMCE)</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="card-title" style="font-size: 50px;">Skills</h2>
+                <p class="card-description">HTML , CSS ,C-lang., Python, Java[Basics]</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="card-title" style="font-size: 50px;">Resume</h2>
+                <p class="card-description"></p>
+              </div>
+            </div>
+          </div>
+        
+        
+
 
     
     
